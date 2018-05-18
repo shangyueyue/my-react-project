@@ -1,11 +1,18 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
 import {withRouter} from 'react-router-dom';
-import querySting from "query-string";
+// import querySting from "query-string";
+// import {addTodo} from '@/redux/actions/homeAction';
 import './home.css';
-
+@connect(
+  state => ({ home:state.home }),
+  dispatch => bindActionCreators({  }, dispatch)
+)
 class Home extends React.Component {
   constructor(props){
     super(props);
+    console.log(props.home)
     this.state={
 
     }
@@ -14,10 +21,6 @@ class Home extends React.Component {
    this.props.history.push("/main")
   }  
   render() {
-    console.log(this.props.history);
-    console.log(this.props.location);
-    console.log(this.props.match);
-    console.log(querySting.parse(this.props.location.search))
     return (
 	 <div className="home-container">
       <h3>this is Home page</h3>
@@ -27,5 +30,6 @@ class Home extends React.Component {
     );
   }
 }
+
 
 export default withRouter(Home);

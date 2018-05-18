@@ -17,7 +17,7 @@ class Sider extends React.Component {
     return (
 	  <div className="container">
       <div>
-      {this.test()}
+           shangyyy
       </div>
     </div>
     );

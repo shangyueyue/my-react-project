@@ -1,15 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Loadable from 'react-loadable';
-
+import Home from '../pages/Home/Home';
 const Loading =()=> <div>Loading ...</div>
-const Home = Loadable({
-    loader: () => import(/* webpackChunkName: "home" */ '../pages/Home/Home'),
-    loading: Loading
-});
+// const Home = Loadable({
+//     loader: () => import(/* webpackChunkName: "home" */ '../pages/Home/Home'),
+//     loading: Loading
+// });
+
 
 const Main =Loadable({
-    loader: () => import(/* webpackChunkName: "main" */ '../pages/Main/Main'),
+    loader: () => import(/* webpackChunkName: "main1" */ '../pages/Main/Main'),
     loading: Loading
 });
 const Mine = Loadable({
@@ -30,12 +31,12 @@ const Center = Loadable({
 const Routers = () => (
     <Router>
         <Switch>
-            <Route  path="/home" 
+            <Route exact path="/" 
                 render={
                     ()=>
                     <Home>
-                        <Route exact path='/home' component={Sider} />
-                        <Route path='/home/center' component={Center} />
+                        <Route path='/' component={Sider} />
+                        <Route path='/center' component={Center} />
                     </Home>    
                 } 
             />
