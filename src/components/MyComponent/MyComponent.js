@@ -1,28 +1,29 @@
-import React from "react";
-import propTypes from "prop-types";
+import React from 'react';
+import propTypes from 'prop-types';
 
-class MyComponent extends React.Component{
-  constructor(props){
+class MyComponent extends React.Component {
+  constructor(props) {
     super(props);
-    this.state={
+    this.state = {
 
-    }
+    };
   }
-  render(){
-    return(
+  render() {
+    return (
       <div>
-      <h3>{this.props.children}</h3>
-      <div>{this.props.name}</div>
+        <h3>{this.props.children}</h3>
+        <div>{this.props.name}</div>
       </div>
 
-    )
+    );
   }
 }
-MyComponent.defaultProps={
-  name:"shangyy"
-}
-MyComponent.propTypes={
-  name:propTypes.any.isRequired
-}
+MyComponent.defaultProps = {
+
+};
+MyComponent.propTypes = {
+  name: propTypes.string.isRequired,
+  children: PropTypes.node.isRequired
+};
 
 export default MyComponent;
