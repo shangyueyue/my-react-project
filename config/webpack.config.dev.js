@@ -120,7 +120,6 @@ module.exports = {
               formatter: eslintFormatter,
               emitWarning:true,
               eslintPath: require.resolve('eslint')
-              
             },
             loader: require.resolve('eslint-loader'),
           },
