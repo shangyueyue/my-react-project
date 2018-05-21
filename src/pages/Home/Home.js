@@ -3,12 +3,13 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { withRouter } from 'react-router-dom';
 // import querySting from "query-string";
-import { addTodo } from '@/redux/actions/homeAction';
+import { fetchMsg } from '@/redux/actions/homeAction';
+import api from '@/api';
 import './home.css';
 
 @connect(
   state => ({ home: state.home }),
-  dispatch => bindActionCreators({ addTodo }, dispatch)
+  dispatch => bindActionCreators({ fetchMsg }, dispatch)
 )
 class Home extends React.Component {
   constructor(props) {
@@ -18,8 +19,10 @@ class Home extends React.Component {
     };
   }
   handleClick() {
-    this.props.addTodo({ age: 15 });
-  //  this.props.history.push("/main")
+    api.getHomeList({ name: 'shangyy' }).then((res) => {
+      console.log('res', res);
+    });
+    // this.props.history.push('/main')
   }
   render() {
     return (

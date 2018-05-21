@@ -27,6 +27,11 @@ const Center = Loadable({
   loading: Loading
 });
 
+const Login = Loadable({
+  loader: () => import(/* webpackChunkName: "home" */ '../pages/Login/Login'),
+  loading: Loading
+});
+
 
 const Routers = () => (
   <Router>
@@ -44,6 +49,7 @@ const Routers = () => (
       />
       <Route path="/main" component={Main} />
       <Route path="/mine/:name" component={Mine} />
+      <Route path="/login" component={Login} />
       <Redirect from="/user" to="/main" />
     </Switch>
   </Router>
