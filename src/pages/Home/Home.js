@@ -5,8 +5,7 @@ import { withRouter } from 'react-router-dom';
 // import querySting from "query-string";
 import { fetchMsg } from '@/redux/actions/homeAction';
 import api from '@/api';
-import MyEchart from '@/components/MyEchart/MyEchart';
-import './home.css';
+import './home.less';
 
 
 @connect(
