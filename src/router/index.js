@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Loadable from 'react-loadable';
-
+import Home from '../pages/Home/Home';
 const Loading = () => <div>Loading ...</div>;
-const Home = Loadable({
-  loader: () => import(/* webpackChunkName: "home" */ '../pages/Home/Home'),
-  loading: Loading
-});
+// const Home = Loadable({
+//   loader: () => import(/* webpackChunkName: "home" */ '../pages/Home/Home'),
+//   loading: Loading
+// });
 
 
 const Main = Loadable({
