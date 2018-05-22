@@ -31,7 +31,7 @@ class Home extends React.Component {
       <div className="home-container">
         <h3>this is Home page</h3>
         <div onClick={this.handleClick.bind(this)}>to main</div>
-        <MyEchart></MyEchart>
+        <MyEchart />
       </div>
     );
   }
