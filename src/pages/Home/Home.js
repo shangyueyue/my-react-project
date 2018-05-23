@@ -25,6 +25,7 @@ class Home extends React.Component {
     // this.props.history.push('/main')
   }
   render() {
+    console.log(document.documentElement.clientWidth);
     return (
       <div className="home-container">
         <h3>this is Home page</h3>
