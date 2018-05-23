@@ -14,6 +14,6 @@
 
 #src
 /src/entry/registerServiceWorker.js
-
+/src/config/rem.js
 #server
 /server
