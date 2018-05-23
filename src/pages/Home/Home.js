@@ -26,12 +26,11 @@ class Home extends React.Component {
     // this.props.history.push('/main')
   }
   render() {
-    console.log(document.documentElement.clientWidth);
+    console.log(process.env);
     return (
       <div className="home-container">
         <h3>this is Home page</h3>
         <div onClick={this.handleClick.bind(this)}>to main</div>
-        <MyEchart />
       </div>
     );
   }
