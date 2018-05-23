@@ -208,6 +208,9 @@ module.exports = {
                         ],
                       },
                     },
+                    {
+                      loader: require.resolve('less-loader') // compiles Less to CSS
+                    }
                   ],
                 },
                 extractTextPluginOptions
