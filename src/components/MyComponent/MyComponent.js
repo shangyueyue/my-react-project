@@ -1,6 +1,7 @@
 import React from 'react';
 import propTypes from 'prop-types';
 
+
 class MyComponent extends React.Component {
   constructor(props) {
     super(props);
@@ -10,10 +11,7 @@ class MyComponent extends React.Component {
   }
   render() {
     return (
-      <div>
-        <h3>{this.props.children}</h3>
-        <div>{this.props.name}</div>
-      </div>
+      <div />
 
     );
   }
