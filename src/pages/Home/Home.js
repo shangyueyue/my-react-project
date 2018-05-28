@@ -5,7 +5,8 @@ import { withRouter } from 'react-router-dom';
 // import querySting from "query-string";
 import { fetchMsg } from '@/redux/actions/homeAction';
 import api from '@/api';
-import './home.css';
+import './home.less';
+
 
 @connect(
   state => ({ home: state.home }),
@@ -25,12 +26,11 @@ class Home extends React.Component {
     // this.props.history.push('/main')
   }
   render() {
+    console.log(process.env);
     return (
       <div className="home-container">
         <h3>this is Home page</h3>
         <div onClick={this.handleClick.bind(this)}>to main</div>
-        <div>{this.props.children}</div>
-        <div>shangyy</div>
       </div>
     );
   }
