@@ -17,3 +17,5 @@
 [0523/150817.959:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: ï¿½Üµï¿½ï¿½Ñ½ï¿½ï¿½ï¿½ï¿½ï¿½ (0x6D)
 [0523/151323.821:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: ï¿½Üµï¿½ï¿½Ñ½ï¿½ï¿½ï¿½ï¿½ï¿½ (0x6D)
 >>>>>>>
+[0530/175033.962:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: ¹ÜµÀÒÑ½áÊø¡£ (0x6D)
+[0530/175331.348:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: ¹ÜµÀÒÑ½áÊø¡£ (0x6D)
